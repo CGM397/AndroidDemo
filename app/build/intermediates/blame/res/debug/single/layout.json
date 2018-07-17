@@ -1,9 +1,5 @@
 [
     {
-        "merged": "D:\\Android\\AndroidProjects\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout\\show_music_detail.xml",
-        "source": "D:\\Android\\AndroidProjects\\MyApplication\\app\\src\\main\\res\\layout\\show_music_detail.xml"
-    },
-    {
         "merged": "D:\\Android\\AndroidProjects\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a3d379dfad96760f7b64723036e6ba352bef76e\\output\\res\\layout\\select_dialog_multichoice_material.xml"
     },
@@ -68,6 +64,10 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\7ed0c18bce30b47245065e580f7d351923072bff\\output\\res\\layout\\design_navigation_item_separator.xml"
     },
     {
+        "merged": "D:\\Android\\AndroidProjects\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout\\sublayout_music_list.xml",
+        "source": "D:\\Android\\AndroidProjects\\MyApplication\\app\\src\\main\\res\\layout\\sublayout_music_list.xml"
+    },
+    {
         "merged": "D:\\Android\\AndroidProjects\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout\\show_analyzed_music.xml",
         "source": "D:\\Android\\AndroidProjects\\MyApplication\\app\\src\\main\\res\\layout\\show_analyzed_music.xml"
     },
@@ -86,6 +86,10 @@
     {
         "merged": "D:\\Android\\AndroidProjects\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a3d379dfad96760f7b64723036e6ba352bef76e\\output\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "D:\\Android\\AndroidProjects\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout\\show_available_music_detail.xml",
+        "source": "D:\\Android\\AndroidProjects\\MyApplication\\app\\src\\main\\res\\layout\\show_available_music_detail.xml"
     },
     {
         "merged": "D:\\Android\\AndroidProjects\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",

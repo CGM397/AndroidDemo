@@ -20,6 +20,10 @@
         "source": "D:\\Android\\AndroidProjects\\MyApplication\\app\\src\\main\\res\\mipmap-hdpi\\footer_btn_mycenter_preesed.png"
     },
     {
+        "merged": "D:\\Android\\AndroidProjects\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\return_button.png",
+        "source": "D:\\Android\\AndroidProjects\\MyApplication\\app\\src\\main\\res\\mipmap-hdpi\\return_button.png"
+    },
+    {
         "merged": "D:\\Android\\AndroidProjects\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\footer_btn_main_preesed.png",
         "source": "D:\\Android\\AndroidProjects\\MyApplication\\app\\src\\main\\res\\mipmap-hdpi\\footer_btn_main_preesed.png"
     },

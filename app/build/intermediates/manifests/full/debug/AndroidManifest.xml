@@ -19,10 +19,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.myapplication.ShowAvailableMusic" />
-        <activity android:name="com.example.myapplication.ShowAcceptedMusic" />
-        <activity android:name="com.example.myapplication.ShowAnalyzedMusic" />
-        <activity android:name="com.example.myapplication.MainMenu" >
+        <activity android:name="com.example.myapplication.activity.ShowAvailableMusic" />
+        <activity android:name="com.example.myapplication.activity.ShowAvailableMusicDetail" />
+        <activity android:name="com.example.myapplication.activity.ShowAcceptedMusic" />
+        <activity android:name="com.example.myapplication.activity.ShowAnalyzedMusic" />
+        <activity android:name="com.example.myapplication.activity.MainMenu" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

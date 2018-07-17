@@ -9,7 +9,7 @@
             android:textAlignment="center"
             android:textSize="30dp"
             android:layout_width="match_parent"
-            android:layout_height="35dp" android:id="@+id/textView"/>
+            android:layout_height="40dp" android:id="@+id/textView"/>
 
     <!--这是一条线-->
     <LinearLayout
@@ -21,7 +21,7 @@
 
     <ListView
             android:layout_width="match_parent"
-            android:layout_height="480dp"/>
+            android:layout_height="475dp"/>
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
