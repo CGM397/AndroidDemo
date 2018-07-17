@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:layout_alignParentBottom="true"
+              android:background="@drawable/piano">
+
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="515dp"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/fbutton_color_emerald">
+    </LinearLayout>
+    <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+        <RadioButton
+                android:text="可接收音乐"
+                android:textAlignment="center"
+                android:drawableTop="@drawable/footer_main_selector"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/radioButton" android:layout_weight="1"/>
+        <RadioButton
+                android:text="已接收音乐"
+                android:textAlignment="center"
+                android:drawableTop="@drawable/footer_search_selector"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/radioButton2" android:layout_weight="1"/>
+        <RadioButton
+                android:text="已打分音乐"
+                android:textAlignment="center"
+                android:drawableTop="@drawable/footer_mycenter_selector"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/radioButton3" android:layout_weight="1"/>
+    </RadioGroup>
+</LinearLayout>
