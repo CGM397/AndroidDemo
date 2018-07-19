@@ -57,6 +57,6 @@
                 android:layout_gravity="center"
                 android:button="@null"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content" android:id="@+id/analyzed" android:layout_weight="1"/>
+                android:layout_height="wrap_content" android:id="@+id/graded" android:layout_weight="1"/>
     </RadioGroup>
 </LinearLayout>

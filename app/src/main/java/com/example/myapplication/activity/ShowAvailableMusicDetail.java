@@ -3,11 +3,33 @@ package com.example.myapplication.activity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+import com.example.myapplication.entity.Music;
+import com.example.myapplication.service.MusicManagementService;
+import com.example.myapplication.serviceImplement.MusicManagementImpl;
+
+import java.io.File;
 
 public class ShowAvailableMusicDetail extends Activity {
+
+    private Handler mHandler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            switch (msg.what) {
+                case 1:
+                    finish();
+                    break;
+                default:
+                    break;
+            }
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -20,18 +42,37 @@ public class ShowAvailableMusicDetail extends Activity {
 
         //get the music name
         Intent intent = getIntent();
-        String musicName = intent.getStringExtra("availableMusicName");
+        String musicInfo = intent.getStringExtra("availableMusicInfo");
 
         //set text
-        id.append("id");
+        final String musicId = musicInfo.substring(0,musicInfo.indexOf("----"));
+        String musicName = musicInfo.substring(musicInfo.indexOf("----")+4);
+        id.append(musicId);
         name.append(musicName);
 
+        //return button
         Button returnBtn = (Button)findViewById(R.id.return_button);
         returnBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //返回到上一个页面
                 finish();
+            }
+        });
+
+        //accept button
+        Button acceptButton = (Button)findViewById(R.id.accept_button);
+        final MusicManagementService musicManagement = new MusicManagementImpl();
+        acceptButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                File file = new File(getFilesDir().getPath() + "/Music/" + musicId + ".txt");
+                Music selectedMusic = musicManagement.readMusic(file);
+                selectedMusic.setState(1);
+                musicManagement.writeMusic(file, selectedMusic);
+                Toast.makeText(ShowAvailableMusicDetail.this,"接收成功",Toast.LENGTH_SHORT).show();
+                //返回到上一层界面
+                mHandler.sendEmptyMessageDelayed(1,1000);
             }
         });
     }

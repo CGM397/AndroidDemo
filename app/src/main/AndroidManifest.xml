@@ -12,7 +12,7 @@
         <activity android:name=".ShowAvailableMusic"/>
         <activity android:name=".ShowAvailableMusicDetail"/>
         <activity android:name=".ShowAcceptedMusic"/>
-        <activity android:name=".ShowAnalyzedMusic"/>
+        <activity android:name=".ShowGradedMusic"/>
         <activity android:name=".MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

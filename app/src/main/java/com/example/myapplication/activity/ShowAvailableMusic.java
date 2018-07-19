@@ -7,11 +7,11 @@ import android.os.Handler;
 import android.os.Message;
 import android.view.KeyEvent;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ListView;
-import android.widget.RadioButton;
-import android.widget.Toast;
+import android.widget.*;
+import com.example.myapplication.entity.Music;
 import com.example.myapplication.layout.MusicAdapter;
+import com.example.myapplication.service.MusicManagementService;
+import com.example.myapplication.serviceImplement.MusicManagementImpl;
 
 import java.util.ArrayList;
 
@@ -55,31 +55,11 @@ public class ShowAvailableMusic extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.show_available_music);
 
-        //add listView
-        final ArrayList<String> musicList = new ArrayList<>();
-        musicList.add("hello");
-        musicList.add("android");
-        //自定义适配器
-        MusicAdapter adapter = new MusicAdapter(ShowAvailableMusic.this, R.layout.sublayout_music_list, musicList);
-        ListView listView = (ListView)findViewById(R.id.list_view);
-        listView.setAdapter(adapter);
-        //add listItemListener
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long Id) {
-                String musicName = musicList.get(position);
-                Intent intent = new Intent(ShowAvailableMusic.this, ShowAvailableMusicDetail.class);
-                intent.putExtra("availableMusicName",musicName);
-                startActivityForResult(intent,1);
-            }
-        });
-
-
         //add buttonListeners
         RadioButton available = (RadioButton)findViewById(R.id.available);
         available.setChecked(true);
         RadioButton accepted = (RadioButton)findViewById(R.id.accepted);
-        RadioButton analyzed = (RadioButton)findViewById(R.id.analyzed);
+        RadioButton graded = (RadioButton)findViewById(R.id.graded);
 
         available.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -99,13 +79,44 @@ public class ShowAvailableMusic extends Activity{
                 finish();
             }
         });
-        analyzed.setOnClickListener(new View.OnClickListener() {
+        graded.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //切换界面
-                Intent intent = new Intent(ShowAvailableMusic.this, ShowAnalyzedMusic.class);
+                Intent intent = new Intent(ShowAvailableMusic.this, ShowGradedMusic.class);
                 startActivity(intent);
                 finish();
+            }
+        });
+    }
+
+    /**
+     * 将界面数据初始化方法写在onResume()中，可以实现从另一activity返回时自动刷新此界面
+     */
+    @Override
+    protected void onResume(){
+        super.onResume();
+
+        //add listView
+        MusicManagementService musicManagement = new MusicManagementImpl();
+        final ArrayList<String> musicList = new ArrayList<>();
+        String dirName = getFilesDir().getPath()+"/Music";
+        ArrayList<Music> musicArrayList = musicManagement.getAllAvailableMusic(dirName);
+        for(int i = 0; i < musicArrayList.size(); i++)
+            musicList.add(musicArrayList.get(i).getMusicId()+"----"+musicArrayList.get(i).getMusicName());
+
+        //自定义适配器
+        MusicAdapter adapter = new MusicAdapter(ShowAvailableMusic.this, R.layout.sublayout_music_list, musicList);
+        ListView listView = (ListView)findViewById(R.id.list_view);
+        listView.setAdapter(adapter);
+        //add listItemListener
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long Id) {
+                String musicInfo = musicList.get(position);
+                Intent intent = new Intent(ShowAvailableMusic.this, ShowAvailableMusicDetail.class);
+                intent.putExtra("availableMusicInfo",musicInfo);
+                startActivityForResult(intent,1);
             }
         });
     }
