@@ -14,6 +14,7 @@ public class MusicManagementImpl implements MusicManagementService {
         if(fileName.exists())
             fileName.delete();
         fileHandler.writeString(fileName, music.getMusicName()+"\r\n");
+        fileHandler.writeString(fileName, music.getAuthor()+"\r\n");
         fileHandler.writeString(fileName, music.getAnalysisContentId()+"\r\n");
         fileHandler.writeString(fileName, (music.getAnalyzed()) ? "true" : "false"+"\r\n");
         fileHandler.writeString(fileName, music.getState()+"\r\n");
@@ -26,9 +27,10 @@ public class MusicManagementImpl implements MusicManagementService {
         String name = fileName.getName();
         music.setMusicId(name.substring(0, name.indexOf(".")));
         music.setMusicName(fileHandler.readString(fileName,1));
-        music.setAnalysisContentId(fileHandler.readString(fileName,2));
-        music.setAnalyzed(fileHandler.readString(fileName,3).equals("true"));
-        music.setState(Integer.parseInt(fileHandler.readString(fileName,4)));
+        music.setAuthor(fileHandler.readString(fileName,2));
+        music.setAnalysisContentId(fileHandler.readString(fileName,3));
+        music.setAnalyzed(fileHandler.readString(fileName,4).equals("true"));
+        music.setState(Integer.parseInt(fileHandler.readString(fileName,5)));
         return music;
     }
 

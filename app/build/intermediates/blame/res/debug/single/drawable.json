@@ -172,12 +172,12 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a3d379dfad96760f7b64723036e6ba352bef76e\\output\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
-        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a3d379dfad96760f7b64723036e6ba352bef76e\\output\\res\\drawable\\abc_edit_text_material.xml"
-    },
-    {
         "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\7ed0c18bce30b47245065e580f7d351923072bff\\output\\res\\drawable\\design_snackbar_background.xml"
+    },
+    {
+        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a3d379dfad96760f7b64723036e6ba352bef76e\\output\\res\\drawable\\abc_edit_text_material.xml"
     },
     {
         "merged": "D:\\Android\\AndroidProjects\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
@@ -188,12 +188,12 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a3d379dfad96760f7b64723036e6ba352bef76e\\output\\res\\drawable\\abc_ic_search_api_material.xml"
     },
     {
-        "merged": "D:\\Android\\AndroidProjects\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a3d379dfad96760f7b64723036e6ba352bef76e\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
-    },
-    {
         "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a3d379dfad96760f7b64723036e6ba352bef76e\\output\\res\\drawable\\abc_vector_test.xml"
+    },
+    {
+        "merged": "D:\\Android\\AndroidProjects\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a3d379dfad96760f7b64723036e6ba352bef76e\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
     },
     {
         "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
@@ -208,12 +208,12 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a3d379dfad96760f7b64723036e6ba352bef76e\\output\\res\\drawable\\abc_switch_thumb_material.xml"
     },
     {
-        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a3d379dfad96760f7b64723036e6ba352bef76e\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
-    },
-    {
         "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a3d379dfad96760f7b64723036e6ba352bef76e\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a3d379dfad96760f7b64723036e6ba352bef76e\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
     },
     {
         "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",

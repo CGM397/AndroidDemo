@@ -3,12 +3,15 @@ package com.example.myapplication.entity;
 public class Music {
 
     private String musicId;
+
     private String musicName;
 
+    private String author;
     /**
      * 如果没有解析则为null
      */
     private String analysisContentId;
+
     private boolean analyzed;
 
     /**
@@ -18,9 +21,11 @@ public class Music {
 
     public Music() {}
 
-    public Music(String musicId, String musicName, String analysisContentId, boolean analyzed, int state){
+    public Music(String musicId, String musicName, String author, String analysisContentId,
+                 boolean analyzed, int state){
         this.musicId = musicId;
         this.musicName = musicName;
+        this.author = author;
         this.analysisContentId = analysisContentId;
         this.analyzed = analyzed;
         this.state = state;
@@ -32,6 +37,10 @@ public class Music {
 
     public String getMusicName() {
         return musicName;
+    }
+
+    public String getAuthor() {
+        return author;
     }
 
     public String getAnalysisContentId() {
@@ -52,6 +61,10 @@ public class Music {
 
     public void setMusicName(String musicName) {
         this.musicName = musicName;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
     }
 
     public void setAnalysisContentId(String analysisContentId) {

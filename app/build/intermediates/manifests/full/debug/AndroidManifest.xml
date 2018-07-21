@@ -22,7 +22,9 @@
         <activity android:name="com.example.myapplication.activity.ShowAvailableMusic" />
         <activity android:name="com.example.myapplication.activity.ShowAvailableMusicDetail" />
         <activity android:name="com.example.myapplication.activity.ShowAcceptedMusic" />
+        <activity android:name="com.example.myapplication.activity.ShowAcceptedMusicDetail" />
         <activity android:name="com.example.myapplication.activity.ShowGradedMusic" />
+        <activity android:name="com.example.myapplication.activity.ShowGradedMusicDetail" />
         <activity android:name="com.example.myapplication.activity.MainMenu" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

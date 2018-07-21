@@ -61,8 +61,10 @@ public class MainMenu extends Activity {
         if(!file.exists())
             file.mkdir();
 
-        Music one = new Music("00001", "hello", "Null", false, 0);
-        Music two = new Music("00002", "android", "Null", false, 0);
+        Music one = new Music("00001", "绿野仙踪","陈悦",
+                "Null", false, 0);
+        Music two = new Music("00002", "hello_android","unknown",
+                "Null", false, 0);
         File file1 = new File(getFilesDir().getPath()+firstMusicPath);
         File file2 = new File(getFilesDir().getPath()+secondMusicPath);
         if(!file1.exists() && !file2.exists()){

@@ -37,21 +37,28 @@ public class ShowAvailableMusicDetail extends Activity {
         setContentView(R.layout.show_available_music_detail);
 
         //get the textView
-        TextView id = (TextView)findViewById(R.id.music_id);
-        TextView name = (TextView)findViewById(R.id.music_name);
+        TextView id = (TextView)findViewById(R.id.available_music_id);
+        TextView name = (TextView)findViewById(R.id.available_music_name);
+        TextView author = (TextView)findViewById(R.id.available_music_author);
 
-        //get the music name
+        //get the music_info
         Intent intent = getIntent();
         String musicInfo = intent.getStringExtra("availableMusicInfo");
 
-        //set text
+        //set music_id and music_name
         final String musicId = musicInfo.substring(0,musicInfo.indexOf("----"));
         String musicName = musicInfo.substring(musicInfo.indexOf("----")+4);
         id.append(musicId);
         name.append(musicName);
 
+        //set music_author
+        final MusicManagementService musicManagement = new MusicManagementImpl();
+        final File file = new File(getFilesDir().getPath() + "/Music/" + musicId + ".txt");
+        final Music selectedMusic = musicManagement.readMusic(file);
+        author.append(selectedMusic.getAuthor());
+
         //return button
-        Button returnBtn = (Button)findViewById(R.id.return_button);
+        Button returnBtn = (Button)findViewById(R.id.available_return_button);
         returnBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -61,13 +68,10 @@ public class ShowAvailableMusicDetail extends Activity {
         });
 
         //accept button
-        Button acceptButton = (Button)findViewById(R.id.accept_button);
-        final MusicManagementService musicManagement = new MusicManagementImpl();
+        Button acceptButton = (Button)findViewById(R.id.available_accept_button);
         acceptButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                File file = new File(getFilesDir().getPath() + "/Music/" + musicId + ".txt");
-                Music selectedMusic = musicManagement.readMusic(file);
                 selectedMusic.setState(1);
                 musicManagement.writeMusic(file, selectedMusic);
                 Toast.makeText(ShowAvailableMusicDetail.this,"接收成功",Toast.LENGTH_SHORT).show();
