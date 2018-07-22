@@ -5,8 +5,6 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.IBinder;
 
-import com.example.myapplication.activity.R;
-
 public class MusicServer extends Service{
 
     private MediaPlayer mediaPlayer;
@@ -21,7 +19,7 @@ public class MusicServer extends Service{
         mediaPlayer = new MediaPlayer();
         //if(mediaPlayer.isPlaying())
             //mediaPlayer.pause();
-        mediaPlayer = MediaPlayer.create(getApplicationContext(),R.raw.music_00001);
+        mediaPlayer = MediaPlayer.create(getApplicationContext(),intent.getIntExtra("music_to_play",10086));
         //mediaPlayer.setLooping(true);
         mediaPlayer.start();
         super.onStart(intent, startId);

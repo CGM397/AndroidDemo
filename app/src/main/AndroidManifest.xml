@@ -15,6 +15,7 @@
         <activity android:name=".ShowAcceptedMusicDetail"/>
         <activity android:name=".ShowGradedMusic"/>
         <activity android:name=".ShowGradedMusicDetail"/>
+        <service android:name="com.example.myapplication.mediaService.MusicServer"/>
         <activity android:name=".MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

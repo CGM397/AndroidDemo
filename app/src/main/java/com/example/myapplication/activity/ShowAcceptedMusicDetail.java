@@ -17,7 +17,7 @@ import java.io.File;
 
 public class ShowAcceptedMusicDetail extends Activity {
 
-    MediaPlayer mediaPlayer;
+    //MediaPlayer mediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -64,20 +64,18 @@ public class ShowAcceptedMusicDetail extends Activity {
                 Intent intent1 = new Intent(ShowAcceptedMusicDetail.this, MusicServer.class);
                 int url = getResources().getIdentifier("music_"+musicId,"raw","com.example.myapplication");
                 Toast.makeText(getApplicationContext(),url,Toast.LENGTH_SHORT).show();
-                //intent1.putExtra("music_to_play",url);
-                //startService(intent1);
-                mediaPlayer = MediaPlayer.create(getApplicationContext(),R.raw.music_00001);
-                mediaPlayer.start();
+                intent1.putExtra("music_to_play",url);
+                startService(intent1);
+                //mediaPlayer = MediaPlayer.create(getApplicationContext(),R.raw.music_00001);
+                //mediaPlayer.start();
             }
         });
     }
 
     @Override
     protected void onStop(){
-        //Intent intent = new Intent(ShowAcceptedMusicDetail.this, MusicServer.class);
-        //stopService(intent);
-        mediaPlayer.stop();
-        mediaPlayer.release();
+        Intent intent = new Intent(ShowAcceptedMusicDetail.this, MusicServer.class);
+        stopService(intent);
         super.onStop();
     }
 }
