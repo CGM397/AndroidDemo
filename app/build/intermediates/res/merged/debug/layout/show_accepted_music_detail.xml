@@ -30,7 +30,7 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@drawable/fbutton_color_emerald">
+            android:background="@drawable/color_emerald">
     </LinearLayout>
 
     <LinearLayout

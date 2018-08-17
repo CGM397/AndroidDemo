@@ -1,66 +1,34 @@
 [
     {
-        "merged": "D:\\Android\\AndroidProjects\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\footer_btn_main.png",
-        "source": "D:\\Android\\AndroidProjects\\MyApplication\\app\\src\\main\\res\\mipmap-hdpi\\footer_btn_main.png"
+        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\accepted.png",
+        "source": "D:\\Android\\AndroidDemo\\app\\src\\main\\res\\mipmap-hdpi\\accepted.png"
     },
     {
-        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\footer_btn_main_preesed.png",
-        "source": "D:\\Android\\AndroidDemo\\app\\src\\main\\res\\mipmap-hdpi\\footer_btn_main_preesed.png"
+        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\available_pressed.png",
+        "source": "D:\\Android\\AndroidDemo\\app\\src\\main\\res\\mipmap-hdpi\\available_pressed.png"
     },
     {
-        "merged": "D:\\Android\\AndroidProjects\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher_round.png",
-        "source": "D:\\Android\\AndroidProjects\\MyApplication\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\available.png",
+        "source": "D:\\Android\\AndroidDemo\\app\\src\\main\\res\\mipmap-hdpi\\available.png"
     },
     {
-        "merged": "D:\\Android\\AndroidProjects\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\footer_search_btn.png",
-        "source": "D:\\Android\\AndroidProjects\\MyApplication\\app\\src\\main\\res\\mipmap-hdpi\\footer_search_btn.png"
-    },
-    {
-        "merged": "D:\\Android\\AndroidProjects\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\footer_btn_mycenter.png",
-        "source": "D:\\Android\\AndroidProjects\\MyApplication\\app\\src\\main\\res\\mipmap-hdpi\\footer_btn_mycenter.png"
-    },
-    {
-        "merged": "D:\\Android\\AndroidProjects\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\footer_btn_mycenter_preesed.png",
-        "source": "D:\\Android\\AndroidProjects\\MyApplication\\app\\src\\main\\res\\mipmap-hdpi\\footer_btn_mycenter_preesed.png"
-    },
-    {
-        "merged": "D:\\Android\\AndroidProjects\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\return_button.png",
-        "source": "D:\\Android\\AndroidProjects\\MyApplication\\app\\src\\main\\res\\mipmap-hdpi\\return_button.png"
-    },
-    {
-        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\footer_search_btn.png",
-        "source": "D:\\Android\\AndroidDemo\\app\\src\\main\\res\\mipmap-hdpi\\footer_search_btn.png"
+        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\graded.png",
+        "source": "D:\\Android\\AndroidDemo\\app\\src\\main\\res\\mipmap-hdpi\\graded.png"
     },
     {
         "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\return_button.png",
         "source": "D:\\Android\\AndroidDemo\\app\\src\\main\\res\\mipmap-hdpi\\return_button.png"
     },
     {
-        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\footer_search_btn_preesed.png",
-        "source": "D:\\Android\\AndroidDemo\\app\\src\\main\\res\\mipmap-hdpi\\footer_search_btn_preesed.png"
-    },
-    {
         "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher_round.png",
         "source": "D:\\Android\\AndroidDemo\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\Android\\AndroidProjects\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\footer_btn_main_preesed.png",
-        "source": "D:\\Android\\AndroidProjects\\MyApplication\\app\\src\\main\\res\\mipmap-hdpi\\footer_btn_main_preesed.png"
+        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\graded_pressed.png",
+        "source": "D:\\Android\\AndroidDemo\\app\\src\\main\\res\\mipmap-hdpi\\graded_pressed.png"
     },
     {
-        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\footer_btn_main.png",
-        "source": "D:\\Android\\AndroidDemo\\app\\src\\main\\res\\mipmap-hdpi\\footer_btn_main.png"
-    },
-    {
-        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\footer_btn_mycenter_preesed.png",
-        "source": "D:\\Android\\AndroidDemo\\app\\src\\main\\res\\mipmap-hdpi\\footer_btn_mycenter_preesed.png"
-    },
-    {
-        "merged": "D:\\Android\\AndroidProjects\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\footer_search_btn_preesed.png",
-        "source": "D:\\Android\\AndroidProjects\\MyApplication\\app\\src\\main\\res\\mipmap-hdpi\\footer_search_btn_preesed.png"
-    },
-    {
-        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\footer_btn_mycenter.png",
-        "source": "D:\\Android\\AndroidDemo\\app\\src\\main\\res\\mipmap-hdpi\\footer_btn_mycenter.png"
+        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\accepted_pressed.png",
+        "source": "D:\\Android\\AndroidDemo\\app\\src\\main\\res\\mipmap-hdpi\\accepted_pressed.png"
     }
 ]

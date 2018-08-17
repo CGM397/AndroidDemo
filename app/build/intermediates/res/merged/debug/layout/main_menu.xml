@@ -16,18 +16,21 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@drawable/fbutton_color_emerald">
+            android:background="@drawable/color_emerald">
     </LinearLayout>
 
     <ListView
             android:layout_width="match_parent"
             android:layout_height="475dp"/>
+
+    <!--这是一条线-->
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@drawable/fbutton_color_emerald">
+            android:background="@drawable/color_emerald">
     </LinearLayout>
+
     <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="fill_parent"
@@ -35,7 +38,7 @@
         <RadioButton
                 android:text="可接收音乐"
                 android:textAlignment="center"
-                android:drawableTop="@drawable/footer_main_selector"
+                android:drawableTop="@drawable/available_selector"
                 android:layout_gravity="center"
                 android:button="@null"
                 android:layout_width="0dp"
@@ -43,7 +46,7 @@
         <RadioButton
                 android:text="已接收音乐"
                 android:textAlignment="center"
-                android:drawableTop="@drawable/footer_search_selector"
+                android:drawableTop="@drawable/accepted_selector"
                 android:layout_gravity="center"
                 android:button="@null"
                 android:layout_width="0dp"
@@ -51,7 +54,7 @@
         <RadioButton
                 android:text="已打分音乐"
                 android:textAlignment="center"
-                android:drawableTop="@drawable/footer_mycenter_selector"
+                android:drawableTop="@drawable/graded_selector"
                 android:layout_gravity="center"
                 android:button="@null"
                 android:layout_width="0dp"

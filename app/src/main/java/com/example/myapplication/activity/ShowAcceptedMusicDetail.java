@@ -63,7 +63,6 @@ public class ShowAcceptedMusicDetail extends Activity {
 
                 Intent intent1 = new Intent(ShowAcceptedMusicDetail.this, MusicServer.class);
                 int url = getResources().getIdentifier("music_"+musicId,"raw","com.example.myapplication");
-                Toast.makeText(getApplicationContext(),url,Toast.LENGTH_SHORT).show();
                 intent1.putExtra("music_to_play",url);
                 startService(intent1);
                 //mediaPlayer = MediaPlayer.create(getApplicationContext(),R.raw.music_00001);
