@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/piano">
+    <TextView
+            android:text="Interactive Piano"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" android:id="@+id/textView"/>
+
+    <!--这是一条线-->
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/color_emerald">
+    </LinearLayout>
+
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="475dp"/>
+
+    <!--这是一条线-->
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/color_emerald">
+    </LinearLayout>
+
+    <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+        <RadioButton
+                android:text="可接收音乐"
+                android:textAlignment="center"
+                android:drawableTop="@drawable/available_selector"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/available" android:layout_weight="1"/>
+        <RadioButton
+                android:text="已接收音乐"
+                android:textAlignment="center"
+                android:drawableTop="@drawable/accepted_selector"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/accepted" android:layout_weight="1"/>
+        <RadioButton
+                android:text="已打分音乐"
+                android:textAlignment="center"
+                android:drawableTop="@drawable/graded_selector"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/graded" android:layout_weight="1"/>
+    </RadioGroup>
+</LinearLayout>

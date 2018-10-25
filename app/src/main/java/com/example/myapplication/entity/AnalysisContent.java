@@ -1,26 +1,66 @@
 package com.example.myapplication.entity;
 
-import java.util.ArrayList;
-
 public class AnalysisContent {
-    private String analysisContentId;
-    private ArrayList<String> content;
+
+    private int timeIntervalFromLastCommand = 0;
+
+    private int currentTime = 0;
+
+    private int state = 0;
+
+    private String musicNote = "";
+
+    private String musicScale = "";
+
+    private int duration = 0;
 
     public AnalysisContent() {}
 
-    public String getAnalysisContentId() {
-        return analysisContentId;
+    public int getTimeIntervalFromLastCommand() {
+        return timeIntervalFromLastCommand;
     }
 
-    public ArrayList<String> getContent() {
-        return content;
+    public int getCurrentTime() {
+        return currentTime;
     }
 
-    public void setAnalysisContentId(String analysisContentId) {
-        this.analysisContentId = analysisContentId;
+    public int getState() {
+        return state;
     }
 
-    public void setContent(ArrayList<String> content) {
-        this.content = content;
+    public String getMusicNote() {
+        return musicNote;
+    }
+
+    public String getMusicScale() {
+        return musicScale;
+    }
+
+    public int getDuration() {
+        return duration;
+    }
+
+    public void setTimeIntervalFromLastCommand(int timeIntervalFromLastCommand) {
+        this.timeIntervalFromLastCommand = timeIntervalFromLastCommand;
+    }
+
+    public void setCurrentTime(int currentTime) {
+        this.currentTime = currentTime;
+    }
+
+    public void setState(int state) {
+        this.state = state;
+    }
+
+    public void setMusicNote(String musicNote) {
+        this.musicNote = musicNote;
+    }
+
+    public void setMusicScale(String musicScale) {
+        this.musicScale = musicScale;
+    }
+
+    public void setDuration(int duration) {
+        this.duration = duration;
     }
 }

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/piano">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+        <Button
+                android:background="@mipmap/return_button"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="55dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/available_return_button"/>
+        <TextView
+                android:layout_width="25dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/textView4"/>
+        <TextView
+                android:text="Interactive Piano"
+                android:textSize="30dp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:id="@+id/textView"/>
+    </LinearLayout>
+
+    <!--这是一条线-->
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/color_emerald">
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+        <TextView
+                android:text="音乐编号 : "
+                android:textSize="25dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/available_music_id"/>
+        <TextView
+                android:text="音乐名称 : "
+                android:textSize="25dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/available_music_name"/>
+        <TextView
+                android:text="演唱者     : "
+                android:textSize="25dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/available_music_author"/>
+        <Button
+                android:text="接收"
+                android:textSize="20dp"
+                android:layout_marginTop="100dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/available_accept_button"/>
+    </LinearLayout>
+</LinearLayout>
