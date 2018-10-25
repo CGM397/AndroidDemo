@@ -77,7 +77,7 @@ public class MIDIServiceImpl implements MIDIService {
         return res;
     }
 
-    public String getMusicalNote(String note) {
+    public ArrayList<String> getMusicalNote(String note) {
         int num = Integer.valueOf(note,16);
         ArrayList<String> musicalName = new ArrayList<>();
         musicalName.add("C");
@@ -94,8 +94,9 @@ public class MIDIServiceImpl implements MIDIService {
         musicalName.add("B");
         int pos = num % 12;
         int musicalScale = num / 12 - 1;
-        String res = musicalName.get(pos);
-        res += musicalScale;
+        ArrayList<String> res = new ArrayList<>();
+        res.add(musicalName.get(pos));
+        res.add(musicalScale+"");
         return res;
     }
 
@@ -105,14 +106,12 @@ public class MIDIServiceImpl implements MIDIService {
         if(leftNybble == '8'){
             res.add("2");
             res.add("0");
-            String musicalNote = getMusicalNote(leftEvents.get(offset+1));
-            res.add(musicalNote);
+            res.addAll(getMusicalNote(leftEvents.get(offset+1)));
         } else if(leftNybble == '9'){
             res.add("2");
             int vv = Integer.valueOf(leftEvents.get(offset+2),16);
             res.add(vv == 0 ? "0" : "1");
-            String musicNote = getMusicalNote(leftEvents.get(offset+1));
-            res.add(musicNote);
+            res.addAll(getMusicalNote(leftEvents.get(offset+1)));
         } else if(leftNybble == 'a' || leftNybble == 'b' || leftNybble == 'e'){
             res.add("2");
         } else if(leftNybble == 'c' || leftNybble == 'd'){

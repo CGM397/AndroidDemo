@@ -30,7 +30,7 @@ public interface MIDIService {
      * @param note the given music note code
      * @return music note
      */
-    public String getMusicalNote(String note);
+    public ArrayList<String> getMusicalNote(String note);
 
     /**
      * return the midi command data length

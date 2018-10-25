@@ -52,11 +52,11 @@ public class MIDIHandler {
                 //assume that eventInfo.size() >= 1, trust me!
                 count = count + deltaTimeLen + Integer.parseInt(eventInfo.get(0));
                 //save the music note
-                if(eventInfo.size() == 3){
+                if(eventInfo.size() >= 4){
                     analysisContent.setCurrentTime(currentTime);
                     analysisContent.setState(Integer.parseInt(eventInfo.get(1)));
-                    analysisContent.setMusicNote(eventInfo.get(2).charAt(0)+"");
-                    analysisContent.setMusicScale(eventInfo.get(2).charAt(1)+"");
+                    analysisContent.setMusicNote(eventInfo.get(2));
+                    analysisContent.setMusicScale(eventInfo.get(3));
                     resultData.add(analysisContent);
                 }
                 //in case that the current command is lastCommand
@@ -70,25 +70,12 @@ public class MIDIHandler {
         resultData = resultSequenceSort(resultData);
         //calculate the timeInterval
         resultData.get(0).setTimeIntervalFromLastCommand(resultData.get(0).getCurrentTime());
+        resultData.get(0).setDuration(getMusicNoteDuration(resultData.get(0), resultData, 1));
         for(int i = 1; i < resultData.size(); i++){
             int timeInterval = resultData.get(i).getCurrentTime() - resultData.get(i-1).getCurrentTime();
             resultData.get(i).setTimeIntervalFromLastCommand(timeInterval);
-            int counter = i+1;
-            String oneMusicNote = resultData.get(i).getMusicNote();
-            String oneMusicScale = resultData.get(i).getMusicScale();
-
-            if(resultData.get(i).getState() == 1){
-                while(counter < resultData.size()){
-                    if(resultData.get(counter).getMusicNote().equals(oneMusicNote) &&
-                            resultData.get(counter).getMusicScale().equals(oneMusicScale) &&
-                            resultData.get(counter).getState() == 0){
-                        int duration = resultData.get(counter).getCurrentTime() - resultData.get(i).getCurrentTime();
-                        resultData.get(i).setDuration(duration);
-                    }
-                }
-            }else{
-                resultData.get(i).setDuration(0);
-            }
+            int offset = i+1;
+            resultData.get(i).setDuration(getMusicNoteDuration(resultData.get(i), resultData, offset));
         }
         //transform ticks into microseconds
         for(AnalysisContent sequence : resultData){
@@ -145,6 +132,26 @@ public class MIDIHandler {
         }catch (IOException e){
             e.printStackTrace();
         }
+    }
+
+    private int getMusicNoteDuration(AnalysisContent analysisContent, ArrayList<AnalysisContent> analysisContents, int offset){
+        int duration = 0;
+        if(analysisContent.getState() == 0)
+            duration = 0;
+        else{
+            String oneMusicNote = analysisContent.getMusicNote();
+            String oneMusicScale = analysisContent.getMusicScale();
+            while (offset < analysisContents.size()){
+                if(analysisContents.get(offset).getMusicNote().equals(oneMusicNote) &&
+                        analysisContents.get(offset).getMusicScale().equals(oneMusicScale) &&
+                        analysisContents.get(offset).getState() == 0){
+                    duration = analysisContents.get(offset).getCurrentTime() - analysisContent.getCurrentTime();
+                    break;
+                }
+                offset++;
+            }
+        }
+        return duration;
     }
 
 
