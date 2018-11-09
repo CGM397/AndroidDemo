@@ -8,22 +8,17 @@ import java.util.ArrayList;
 
 public class MIDIServiceImpl implements MIDIService {
 
-    public ArrayList<String> getSequence(String path){
+    public ArrayList<String> getSequence(InputStream midiFileInputStream){
         ArrayList<String> store = new ArrayList<>();
         try{
-            InputStream inputStream = new FileInputStream(path);
             int res;
-            while((res = inputStream.read()) != -1){
+            while((res = midiFileInputStream.read()) != -1){
                 String tmp = Integer.toHexString(res);
                 if(tmp.length() == 1)
                     tmp = "0" + tmp;
                 store.add(tmp);
             }
-            for (String str : store) {
-                System.out.print(str + " ");
-            }
-            System.out.println();
-            inputStream.close();
+            midiFileInputStream.close();
         }catch (Exception e){
             e.printStackTrace();
         }

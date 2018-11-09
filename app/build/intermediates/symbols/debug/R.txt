@@ -740,6 +740,7 @@ int id accepted 0x7f0e0089
 int id accepted_music_author 0x7f0e00a8
 int id accepted_music_id 0x7f0e00a6
 int id accepted_music_name 0x7f0e00a7
+int id accepted_perform_button 0x7f0e00ab
 int id accepted_play_button 0x7f0e00a9
 int id accepted_return_button 0x7f0e00a4
 int id action0 0x7f0e0090
@@ -769,11 +770,11 @@ int id always 0x7f0e0041
 int id analyzed 0x7f0e008a
 int id auto 0x7f0e002d
 int id available 0x7f0e0088
-int id available_accept_button 0x7f0e00ae
-int id available_music_author 0x7f0e00ad
-int id available_music_id 0x7f0e00ab
-int id available_music_name 0x7f0e00ac
-int id available_return_button 0x7f0e00aa
+int id available_accept_button 0x7f0e00b0
+int id available_music_author 0x7f0e00af
+int id available_music_id 0x7f0e00ad
+int id available_music_name 0x7f0e00ae
+int id available_return_button 0x7f0e00ac
 int id basic 0x7f0e0015
 int id beginning 0x7f0e003f
 int id bottom 0x7f0e002e
@@ -827,12 +828,12 @@ int id line3 0x7f0e00a1
 int id listMode 0x7f0e0018
 int id list_item 0x7f0e004f
 int id list_view 0x7f0e0087
-int id masked 0x7f0e00b1
+int id masked 0x7f0e00b3
 int id media_actions 0x7f0e0093
 int id middle 0x7f0e0040
 int id mini 0x7f0e003e
 int id multiply 0x7f0e0027
-int id music_name 0x7f0e00af
+int id music_name 0x7f0e00b1
 int id navigation_header_container 0x7f0e0080
 int id never 0x7f0e0044
 int id none 0x7f0e0017
@@ -895,6 +896,7 @@ int id textSpacerNoTitle 0x7f0e0058
 int id textView 0x7f0e008b
 int id textView2 0x7f0e0086
 int id textView4 0x7f0e00a5
+int id textView5 0x7f0e00aa
 int id text_input_password_toggle 0x7f0e0085
 int id textinput_counter 0x7f0e0009
 int id textinput_error 0x7f0e000a
@@ -910,7 +912,7 @@ int id transition_scene_layoutid_cache 0x7f0e000c
 int id up 0x7f0e000d
 int id useLogo 0x7f0e0020
 int id view_offset_helper 0x7f0e000e
-int id visible 0x7f0e00b0
+int id visible 0x7f0e00b2
 int id withText 0x7f0e0045
 int id wrap 0x7f0e0011
 int id wrap_content 0x7f0e002c
@@ -1004,6 +1006,10 @@ int mipmap ic_launcher_round 0x7f030006
 int mipmap logo 0x7f030007
 int mipmap return_button 0x7f030008
 int raw music_00001 0x7f070000
+int raw music_00002 0x7f070001
+int raw music_00003 0x7f070002
+int raw music_00004 0x7f070003
+int raw music_00005 0x7f070004
 int string abc_action_bar_home_description 0x7f080000
 int string abc_action_bar_home_description_format 0x7f080001
 int string abc_action_bar_home_subtitle_description_format 0x7f080002

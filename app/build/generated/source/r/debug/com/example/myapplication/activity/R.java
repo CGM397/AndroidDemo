@@ -3121,6 +3121,7 @@ containing a value of this type.
         public static final int accepted_music_author=0x7f0e00a8;
         public static final int accepted_music_id=0x7f0e00a6;
         public static final int accepted_music_name=0x7f0e00a7;
+        public static final int accepted_perform_button=0x7f0e00ab;
         public static final int accepted_play_button=0x7f0e00a9;
         public static final int accepted_return_button=0x7f0e00a4;
         public static final int action0=0x7f0e0090;
@@ -3150,11 +3151,11 @@ containing a value of this type.
         public static final int analyzed=0x7f0e008a;
         public static final int auto=0x7f0e002d;
         public static final int available=0x7f0e0088;
-        public static final int available_accept_button=0x7f0e00ae;
-        public static final int available_music_author=0x7f0e00ad;
-        public static final int available_music_id=0x7f0e00ab;
-        public static final int available_music_name=0x7f0e00ac;
-        public static final int available_return_button=0x7f0e00aa;
+        public static final int available_accept_button=0x7f0e00b0;
+        public static final int available_music_author=0x7f0e00af;
+        public static final int available_music_id=0x7f0e00ad;
+        public static final int available_music_name=0x7f0e00ae;
+        public static final int available_return_button=0x7f0e00ac;
         public static final int basic=0x7f0e0015;
         public static final int beginning=0x7f0e003f;
         public static final int bottom=0x7f0e002e;
@@ -3208,12 +3209,12 @@ containing a value of this type.
         public static final int listMode=0x7f0e0018;
         public static final int list_item=0x7f0e004f;
         public static final int list_view=0x7f0e0087;
-        public static final int masked=0x7f0e00b1;
+        public static final int masked=0x7f0e00b3;
         public static final int media_actions=0x7f0e0093;
         public static final int middle=0x7f0e0040;
         public static final int mini=0x7f0e003e;
         public static final int multiply=0x7f0e0027;
-        public static final int music_name=0x7f0e00af;
+        public static final int music_name=0x7f0e00b1;
         public static final int navigation_header_container=0x7f0e0080;
         public static final int never=0x7f0e0044;
         public static final int none=0x7f0e0017;
@@ -3276,6 +3277,7 @@ containing a value of this type.
         public static final int textView=0x7f0e008b;
         public static final int textView2=0x7f0e0086;
         public static final int textView4=0x7f0e00a5;
+        public static final int textView5=0x7f0e00aa;
         public static final int text_input_password_toggle=0x7f0e0085;
         public static final int textinput_counter=0x7f0e0009;
         public static final int textinput_error=0x7f0e000a;
@@ -3291,7 +3293,7 @@ containing a value of this type.
         public static final int up=0x7f0e000d;
         public static final int useLogo=0x7f0e0020;
         public static final int view_offset_helper=0x7f0e000e;
-        public static final int visible=0x7f0e00b0;
+        public static final int visible=0x7f0e00b2;
         public static final int withText=0x7f0e0045;
         public static final int wrap=0x7f0e0011;
         public static final int wrap_content=0x7f0e002c;
@@ -3393,6 +3395,10 @@ containing a value of this type.
     }
     public static final class raw {
         public static final int music_00001=0x7f070000;
+        public static final int music_00002=0x7f070001;
+        public static final int music_00003=0x7f070002;
+        public static final int music_00004=0x7f070003;
+        public static final int music_00005=0x7f070004;
     }
     public static final class string {
         public static final int abc_action_bar_home_description=0x7f080000;

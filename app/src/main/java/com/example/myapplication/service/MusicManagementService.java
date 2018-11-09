@@ -7,16 +7,16 @@ import java.util.ArrayList;
 
 public interface MusicManagementService {
 
-    public void writeMusic(File fileName, Music music);
+    void writeMusic(File fileName, Music music);
 
-    public Music readMusic(File fileName);
+    Music readMusic(File fileName);
 
-    public ArrayList<Music> getAllAvailableMusic(String dirName);
+    ArrayList<Music> getAllAvailableMusic(String dirName);
 
-    public ArrayList<Music> getAllAcceptedMusic(String dirName);
+    ArrayList<Music> getAllAcceptedMusic(String dirName);
 
-    public ArrayList<Music> getAllGradedMusic(String dirName);
+    ArrayList<Music> getAllGradedMusic(String dirName);
 
-    public ArrayList<Music> getAllMusic(String dirName);
+    ArrayList<Music> getAllMusic(String dirName);
 
 }

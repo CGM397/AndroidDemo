@@ -22,7 +22,7 @@ public class ShowAcceptedMusic extends Activity {
 
     private static boolean isExit = false;
 
-    Handler myHandler = new Handler() {
+    private Handler myHandler = new Handler() {
 
         @Override
         public void handleMessage(Message msg) {
@@ -40,7 +40,7 @@ public class ShowAcceptedMusic extends Activity {
         return super.onKeyDown(keyCode, event);
     }
 
-    public void exit() {
+    private void exit() {
         if (!isExit) {
             isExit = true;
             Toast.makeText(getApplicationContext(), "再按一次退出程序",
@@ -105,8 +105,8 @@ public class ShowAcceptedMusic extends Activity {
         final ArrayList<String> musicList = new ArrayList<>();
         String dirName = getFilesDir().getPath()+"/Music";
         ArrayList<Music> musicArrayList = musicManagement.getAllAcceptedMusic(dirName);
-        for(int i = 0; i < musicArrayList.size(); i++)
-            musicList.add(musicArrayList.get(i).getMusicId()+"----"+musicArrayList.get(i).getMusicName());
+        for(Music oneMusic : musicArrayList)
+            musicList.add(oneMusic.getMusicId() + "----" + oneMusic.getMusicName());
 
         //自定义适配器
         MusicAdapter adapter = new MusicAdapter(ShowAcceptedMusic.this, R.layout.sublayout_music_list, musicList);

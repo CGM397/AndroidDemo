@@ -16,7 +16,7 @@ public class MusicManagementImpl implements MusicManagementService {
         fileHandler.writeString(fileName, music.getMusicName()+"\r\n");
         fileHandler.writeString(fileName, music.getAuthor()+"\r\n");
         fileHandler.writeString(fileName, music.getAnalysisContentId()+"\r\n");
-        fileHandler.writeString(fileName, (music.getAnalyzed()) ? "true" : "false"+"\r\n");
+        fileHandler.writeString(fileName, (music.getAnalyzed() ? "true" : "false")+"\r\n");
         fileHandler.writeString(fileName, music.getState()+"\r\n");
     }
 
@@ -38,9 +38,9 @@ public class MusicManagementImpl implements MusicManagementService {
     public ArrayList<Music> getAllAvailableMusic(String dirName) {
         ArrayList<Music> result = new ArrayList<>();
         ArrayList<Music> store = getAllMusic(dirName);
-        for(int i = 0; i < store.size(); i++){
-            if(store.get(i).getState() == 0)
-                result.add(store.get(i));
+        for(Music oneMusic : store){
+            if(oneMusic.getState() == 0)
+                result.add(oneMusic);
         }
         return result;
     }
@@ -49,9 +49,9 @@ public class MusicManagementImpl implements MusicManagementService {
     public ArrayList<Music> getAllAcceptedMusic(String dirName) {
         ArrayList<Music> result = new ArrayList<>();
         ArrayList<Music> store = getAllMusic(dirName);
-        for(int i = 0; i < store.size(); i++){
-            if(store.get(i).getState() == 1 || store.get(i).getState() == 2)
-                result.add(store.get(i));
+        for(Music oneMusic : store){
+            if(oneMusic.getState() == 1 || oneMusic.getState() == 2)
+                result.add(oneMusic);
         }
         return result;
     }
@@ -60,9 +60,9 @@ public class MusicManagementImpl implements MusicManagementService {
     public ArrayList<Music> getAllGradedMusic(String dirName) {
         ArrayList<Music> result = new ArrayList<>();
         ArrayList<Music> store = getAllMusic(dirName);
-        for(int i = 0; i < store.size(); i++){
-            if(store.get(i).getState() == 2)
-                result.add(store.get(i));
+        for(Music oneMusic : store){
+            if(oneMusic.getState() == 2)
+                result.add(oneMusic);
         }
         return result;
     }
@@ -72,8 +72,8 @@ public class MusicManagementImpl implements MusicManagementService {
         ArrayList<Music> result = new ArrayList<>();
         File file = new File(dirName);
         String[] fileList = file.list();
-        for(int i = 0; i < fileList.length; i++){
-            File file1 = new File(dirName + "/" + fileList[i]);
+        for(String oneFile : fileList){
+            File file1 = new File(dirName + "/" + oneFile);
             Music oneMusic = readMusic(file1);
             result.add(oneMusic);
         }

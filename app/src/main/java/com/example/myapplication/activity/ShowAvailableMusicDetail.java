@@ -14,6 +14,7 @@ import com.example.myapplication.service.MusicManagementService;
 import com.example.myapplication.serviceImplement.MusicManagementImpl;
 
 import java.io.File;
+import java.io.InputStream;
 
 public class ShowAvailableMusicDetail extends Activity {
 
@@ -51,9 +52,14 @@ public class ShowAvailableMusicDetail extends Activity {
         id.append(musicId);
         name.append(musicName);
 
-        //set music_author
         final MusicManagementService musicManagement = new MusicManagementImpl();
+        final MIDIHandler midiHandler = new MIDIHandler();
         final File file = new File(getFilesDir().getPath() + "/Music/" + musicId + ".txt");
+        int url = getResources().getIdentifier("music_"+musicId,"raw","com.example.myapplication");
+        final InputStream midiFileInputStream = getResources().openRawResource(url);
+        final String analyseResultPath = getFilesDir().getPath() + "/MidiAnalysisResult/" + musicId + ".txt";
+
+        //set music_author
         final Music selectedMusic = musicManagement.readMusic(file);
         author.append(selectedMusic.getAuthor());
 
@@ -72,9 +78,12 @@ public class ShowAvailableMusicDetail extends Activity {
         acceptButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                midiHandler.analyseMidi(midiFileInputStream,analyseResultPath);
                 selectedMusic.setState(1);
+                selectedMusic.setAnalyzed(true);
+                selectedMusic.setAnalysisContentId(musicId);
                 musicManagement.writeMusic(file, selectedMusic);
-                Toast.makeText(ShowAvailableMusicDetail.this,"接收成功",Toast.LENGTH_SHORT).show();
+                Toast.makeText(ShowAvailableMusicDetail.this,"接收成功(已解析)",Toast.LENGTH_SHORT).show();
                 //返回到上一层界面
                 mHandler.sendEmptyMessageDelayed(1,1000);
             }

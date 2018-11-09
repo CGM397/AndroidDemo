@@ -20,6 +20,7 @@ public class MainMenu extends Activity {
     private static boolean isExit = false;
     private static String firstMusicPath = "/Music/00001.txt";
     private static String secondMusicPath = "/Music/00002.txt";
+    private static String fifthMusicPath = "/Music/00005.txt";
 
     Handler myHandler = new Handler() {
 
@@ -57,20 +58,27 @@ public class MainMenu extends Activity {
         setContentView(R.layout.main_menu);
 
         //初始化数据
-        File file = new File(getFilesDir().getPath()+"/Music");
-        if(!file.exists())
-            file.mkdir();
+        File musicInfoFile = new File(getFilesDir().getPath()+"/Music");
+        File midiInfoFile = new File(getFilesDir().getPath()+"/MidiAnalysisResult");
+        if(!musicInfoFile.exists())
+            musicInfoFile.mkdirs();
+        if(!midiInfoFile.exists())
+            midiInfoFile.mkdirs();
 
         Music one = new Music("00001", "绿野仙踪","陈悦",
                 "Null", false, 0);
         Music two = new Music("00002", "hello_android","unknown",
                 "Null", false, 0);
+        Music five = new Music("00005", "小星星","unknown",
+                "Null", false, 0);
         File file1 = new File(getFilesDir().getPath()+firstMusicPath);
         File file2 = new File(getFilesDir().getPath()+secondMusicPath);
-        if(!file1.exists() && !file2.exists()){
+        File file5 = new File(getFilesDir().getPath()+fifthMusicPath);
+        if(!file1.exists() && !file2.exists() && !file5.exists()){
             MusicManagementService musicManagement = new MusicManagementImpl();
             musicManagement.writeMusic(file1, one);
             musicManagement.writeMusic(file2, two);
+            musicManagement.writeMusic(file5, five);
         }
 
         //add buttonListeners

@@ -4,16 +4,14 @@ import com.example.myapplication.entity.AnalysisContent;
 import com.example.myapplication.service.MIDIService;
 import com.example.myapplication.serviceImplement.MIDIServiceImpl;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 
 public class MIDIHandler {
 
-    public void analyseMidi(String dirPath, String fileName){
+    public void analyseMidi(InputStream midiFileInputStream, String analyseResultPath){
         MIDIService midiService = new MIDIServiceImpl();
-        ArrayList<String> store = midiService.getSequence(dirPath + "/" + fileName);
+        ArrayList<String> store = midiService.getSequence(midiFileInputStream);
         ArrayList<ArrayList<String>> tracks = midiService.getTracks(store);
         int currentTime;
         String lastCommand = "";
@@ -85,9 +83,31 @@ public class MIDIHandler {
             sequence.setDuration((int)Math.round(durationToMicroseconds));
         }
         //save the result
-        String savePath = dirPath.substring(0, dirPath.lastIndexOf('/')) +
-                "MidiFile/" + fileName;
-        saveResultData(resultData, savePath);
+        saveResultData(resultData, analyseResultPath);
+    }
+
+    public ArrayList<AnalysisContent> readMidi(String path){
+        ArrayList<AnalysisContent> res = new ArrayList<>();
+        try{
+            FileInputStream fin = new FileInputStream(new File(path));
+            InputStreamReader inputStreamReader = new InputStreamReader(fin);
+            BufferedReader reader = new BufferedReader(inputStreamReader);
+            String line;
+            while((line = reader.readLine()) != null){
+                String[] store = line.split(",");
+                AnalysisContent oneLine = new AnalysisContent();
+                oneLine.setTimeIntervalFromLastCommand(Integer.parseInt(store[0]));
+                oneLine.setCurrentTime(Integer.parseInt(store[1]));
+                oneLine.setState(Integer.parseInt(store[2]));
+                oneLine.setMusicNote(store[3]);
+                oneLine.setMusicScale(store[4]);
+                oneLine.setDuration(Integer.parseInt(store[5]));
+                res.add(oneLine);
+            }
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+        return res;
     }
 
     private ArrayList<AnalysisContent> resultSequenceSort(ArrayList<AnalysisContent> sequences){
@@ -118,9 +138,10 @@ public class MIDIHandler {
         try{
             File file = new File(path);
             FileWriter fileWriter = new FileWriter(file,false);
-            fileWriter.write("0,0,0,0,0\r\n");
+            fileWriter.write("0,0,0,0,0,0\r\n");
             for (AnalysisContent analysisContent: analysisContents) {
                 String str =  analysisContent.getTimeIntervalFromLastCommand() + "," +
+                        analysisContent.getCurrentTime() + "," +
                         analysisContent.getState() + "," +
                         analysisContent.getMusicNote() + "," +
                         analysisContent.getMusicScale() + "," +

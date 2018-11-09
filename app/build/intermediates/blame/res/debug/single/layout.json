@@ -12,20 +12,20 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a3d379dfad96760f7b64723036e6ba352bef76e\\output\\res\\layout\\notification_template_media_custom.xml"
     },
     {
-        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a3d379dfad96760f7b64723036e6ba352bef76e\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
-    },
-    {
         "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a3d379dfad96760f7b64723036e6ba352bef76e\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
     },
     {
-        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a3d379dfad96760f7b64723036e6ba352bef76e\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a3d379dfad96760f7b64723036e6ba352bef76e\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
         "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a3d379dfad96760f7b64723036e6ba352bef76e\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a3d379dfad96760f7b64723036e6ba352bef76e\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },
     {
         "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",

@@ -8,7 +8,7 @@ public class Music {
 
     private String author;
     /**
-     * 如果没有解析则为null
+     * 如果没有解析则为null，否则是musicId(暂时)
      */
     private String analysisContentId;
 

@@ -2,25 +2,25 @@ package com.example.myapplication.activity;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
+import com.example.myapplication.entity.AnalysisContent;
 import com.example.myapplication.entity.Music;
 import com.example.myapplication.mediaService.MusicServer;
 import com.example.myapplication.service.MusicManagementService;
 import com.example.myapplication.serviceImplement.MusicManagementImpl;
 
 import java.io.File;
+import java.util.ArrayList;
 
 public class ShowAcceptedMusicDetail extends Activity {
 
     //MediaPlayer mediaPlayer;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(final Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.show_accepted_music_detail);
 
@@ -60,13 +60,20 @@ public class ShowAcceptedMusicDetail extends Activity {
         acceptButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Intent intent1 = new Intent(ShowAcceptedMusicDetail.this, MusicServer.class);
                 int url = getResources().getIdentifier("music_"+musicId,"raw","com.example.myapplication");
                 intent1.putExtra("music_to_play",url);
                 startService(intent1);
-                //mediaPlayer = MediaPlayer.create(getApplicationContext(),R.raw.music_00001);
-                //mediaPlayer.start();
+            }
+        });
+        //perform button
+        Button performButton = (Button)findViewById(R.id.accepted_perform_button);
+        performButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MIDIHandler midiHandler = new MIDIHandler();
+                String path = getFilesDir().getPath() + "/MidiAnalysisResult/" + musicId + ".txt";
+                ArrayList<AnalysisContent> storeContent = midiHandler.readMidi(path);
             }
         });
     }
