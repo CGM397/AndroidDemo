@@ -41,6 +41,7 @@ public class ShowAvailableMusicDetail extends Activity {
         TextView id = (TextView)findViewById(R.id.available_music_id);
         TextView name = (TextView)findViewById(R.id.available_music_name);
         TextView author = (TextView)findViewById(R.id.available_music_author);
+        TextView selectMusicName = (TextView)findViewById(R.id.available_select_music);
 
         //get the music_info
         Intent intent = getIntent();
@@ -51,6 +52,7 @@ public class ShowAvailableMusicDetail extends Activity {
         String musicName = musicInfo.substring(musicInfo.indexOf("----")+4);
         id.append(musicId);
         name.append(musicName);
+        selectMusicName.setText(musicName);
 
         final MusicManagementService musicManagement = new MusicManagementImpl();
         final MIDIHandler midiHandler = new MIDIHandler();

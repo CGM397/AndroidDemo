@@ -17,8 +17,6 @@ import java.util.ArrayList;
 
 public class ShowAcceptedMusicDetail extends Activity {
 
-    //MediaPlayer mediaPlayer;
-
     @Override
     protected void onCreate(final Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -28,6 +26,7 @@ public class ShowAcceptedMusicDetail extends Activity {
         TextView id = (TextView)findViewById(R.id.accepted_music_id);
         TextView name = (TextView)findViewById(R.id.accepted_music_name);
         TextView author = (TextView)findViewById(R.id.accepted_music_author);
+        TextView selectMusicName = (TextView)findViewById(R.id.accepted_select_music);
 
         //get the music_info
         Intent intent = getIntent();
@@ -38,6 +37,7 @@ public class ShowAcceptedMusicDetail extends Activity {
         String musicName = musicInfo.substring(musicInfo.indexOf("----")+4);
         id.append(musicId);
         name.append(musicName);
+        selectMusicName.setText(musicName);
 
         //set music_author
         final MusicManagementService musicManagement = new MusicManagementImpl();

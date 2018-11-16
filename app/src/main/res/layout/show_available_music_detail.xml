@@ -22,7 +22,7 @@
                 android:text="Interactive Piano"
                 android:textSize="30dp"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent" android:id="@+id/textView"/>
+                android:layout_height="fill_parent" android:id="@+id/available_select_music"/>
     </LinearLayout>
 
     <!--这是一条线-->

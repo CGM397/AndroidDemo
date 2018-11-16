@@ -13,7 +13,7 @@
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="55dp"
                 android:layout_height="fill_parent"
-                android:id="@+id/accepted_return_button"/>
+                android:id="@+id/graded_return_button"/>
         <TextView
                 android:layout_width="25dp"
                 android:layout_height="fill_parent"
@@ -22,7 +22,7 @@
                 android:text="Interactive Piano"
                 android:textSize="30dp"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent" android:id="@+id/accepted_select_music"/>
+                android:layout_height="fill_parent" android:id="@+id/graded_select_music"/>
     </LinearLayout>
 
     <!--这是一条线-->
@@ -44,15 +44,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/accepted_music_id"/>
-        <TextView
-                android:text="音乐名称 : "
-                android:textSize="25dp"
-                android:layout_marginTop="80dp"
-                android:layout_marginLeft="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/accepted_music_name"/>
+                android:id="@+id/graded_music_id"/>
         <TextView
                 android:text="演唱者     : "
                 android:textSize="25dp"
@@ -60,32 +52,6 @@
                 android:layout_marginLeft="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/accepted_music_author"/>
-
-        <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="fill_parent">
-
-            <Button
-                    android:text="播放"
-                    android:textSize="20dp"
-                    android:layout_width="130dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="32dp"
-                    android:layout_gravity="center"
-                    android:id="@+id/accepted_play_button"/>
-            <TextView
-                    android:layout_width="35dp"
-                    android:layout_height="fill_parent"
-                    android:id="@+id/textView5"/>
-            <Button
-                    android:text="演奏"
-                    android:textSize="20dp"
-                    android:layout_width="130dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:id="@+id/accepted_perform_button"/>
-        </LinearLayout>
+                android:id="@+id/graded_music_author"/>
     </LinearLayout>
 </LinearLayout>
