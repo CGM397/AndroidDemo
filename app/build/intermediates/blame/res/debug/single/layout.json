@@ -12,20 +12,20 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a3d379dfad96760f7b64723036e6ba352bef76e\\output\\res\\layout\\notification_template_media_custom.xml"
     },
     {
-        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a3d379dfad96760f7b64723036e6ba352bef76e\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
-    },
-    {
         "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a3d379dfad96760f7b64723036e6ba352bef76e\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
-        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a3d379dfad96760f7b64723036e6ba352bef76e\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
+        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a3d379dfad96760f7b64723036e6ba352bef76e\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
     },
     {
         "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a3d379dfad96760f7b64723036e6ba352bef76e\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a3d379dfad96760f7b64723036e6ba352bef76e\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
         "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
@@ -112,10 +112,6 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a3d379dfad96760f7b64723036e6ba352bef76e\\output\\res\\layout\\abc_search_view.xml"
     },
     {
-        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\analyze_music.xml",
-        "source": "D:\\Android\\AndroidDemo\\app\\src\\main\\res\\layout\\analyze_music.xml"
-    },
-    {
         "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\7ed0c18bce30b47245065e580f7d351923072bff\\output\\res\\layout\\design_navigation_menu_item.xml"
     },
@@ -134,6 +130,10 @@
     {
         "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a3d379dfad96760f7b64723036e6ba352bef76e\\output\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\show_graded_music_detail.xml",
+        "source": "D:\\Android\\AndroidDemo\\app\\src\\main\\res\\layout\\show_graded_music_detail.xml"
     },
     {
         "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",

@@ -20,7 +20,6 @@ public class ShowGradedMusicDetail extends Activity {
         setContentView(R.layout.show_graded_music_detail);
 
         //get the textViews
-        TextView selectMusicName = (TextView)findViewById(R.id.graded_select_music);
         TextView musicId = (TextView)findViewById(R.id.graded_music_id);
         TextView musicAuthor = (TextView)findViewById(R.id.graded_music_author);
 
@@ -29,9 +28,8 @@ public class ShowGradedMusicDetail extends Activity {
 
         //set the musicId and musicName
         final String id = musicInfo.substring(0,musicInfo.indexOf("----"));
-        String name = musicInfo.substring(musicInfo.indexOf("----") + 4);
+        //String name = musicInfo.substring(musicInfo.indexOf("----") + 4);
         musicId.append(id);
-        selectMusicName.setText(name);
 
         //set musicAuthor
         final MusicManagementService musicManagement = new MusicManagementImpl();

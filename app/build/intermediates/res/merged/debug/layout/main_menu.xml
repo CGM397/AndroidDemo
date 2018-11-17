@@ -5,9 +5,9 @@
               android:layout_height="fill_parent"
               android:background="@drawable/piano">
     <TextView
-            android:text="Interactive Piano"
+            android:text="@string/title"
             android:textAlignment="center"
-            android:textSize="30dp"
+            android:textSize="30sp"
             android:layout_width="match_parent"
             android:layout_height="40dp" android:id="@+id/textView"/>
 
@@ -19,9 +19,17 @@
             android:background="@drawable/color_emerald">
     </LinearLayout>
 
-    <ListView
-            android:layout_width="match_parent"
-            android:layout_height="475dp"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="475dp">
+        <TextView
+                android:text="@string/main_menu_message"
+                android:textSize="32sp"
+                android:textColor="@color/colorPurple"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+    </LinearLayout>
 
     <!--这是一条线-->
     <LinearLayout
@@ -36,7 +44,7 @@
             android:layout_height="fill_parent"
             android:orientation="horizontal">
         <RadioButton
-                android:text="可接收音乐"
+                android:text="@string/available_music"
                 android:textAlignment="center"
                 android:drawableTop="@drawable/available_selector"
                 android:layout_gravity="center"
@@ -44,7 +52,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content" android:id="@+id/available" android:layout_weight="1"/>
         <RadioButton
-                android:text="已接收音乐"
+                android:text="@string/accepted_music"
                 android:textAlignment="center"
                 android:drawableTop="@drawable/accepted_selector"
                 android:layout_gravity="center"
@@ -52,7 +60,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content" android:id="@+id/accepted" android:layout_weight="1"/>
         <RadioButton
-                android:text="已打分音乐"
+                android:text="@string/graded_music"
                 android:textAlignment="center"
                 android:drawableTop="@drawable/graded_selector"
                 android:layout_gravity="center"

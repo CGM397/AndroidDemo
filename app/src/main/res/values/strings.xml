@@ -1,6 +1,14 @@
 <resources>
     <string name="app_name">Interactive-piano</string>
-    <string name="button_send">Click to sing</string>
-    <string name="default_message">This is one song</string>
-    <string name="interact_message">It begins to sing!</string>
+    <string name="title">Interactive Piano</string>
+    <string name="main_menu_message">欢迎使用互动音乐APP！</string>
+    <string name="available_music">可接收音乐</string>
+    <string name="accepted_music">已接收音乐</string>
+    <string name="graded_music">已打分音乐</string>
+    <string name="music_id">音乐编号 : </string>
+    <string name="music_name">音乐名称 : </string>
+    <string name="music_author">演唱者&#160;&#160;&#160;&#160;&#160;: </string>
+    <string name="accept">接收</string>
+    <string name="play">播放</string>
+    <string name="perform">演奏</string>
 </resources>

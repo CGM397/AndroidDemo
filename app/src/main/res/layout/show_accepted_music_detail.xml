@@ -19,8 +19,8 @@
                 android:layout_height="fill_parent"
                 android:id="@+id/textView4"/>
         <TextView
-                android:text="Interactive Piano"
-                android:textSize="30dp"
+                android:text="@string/title"
+                android:textSize="30sp"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent" android:id="@+id/accepted_select_music"/>
     </LinearLayout>
@@ -38,25 +38,28 @@
             android:layout_width="match_parent"
             android:layout_height="fill_parent">
         <TextView
-                android:text="音乐编号 : "
-                android:textSize="25dp"
+                android:text="@string/music_id"
+                android:textSize="25sp"
                 android:layout_marginTop="80dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/accepted_music_id"/>
         <TextView
-                android:text="音乐名称 : "
-                android:textSize="25dp"
+                android:text="@string/music_name"
+                android:textSize="25sp"
                 android:layout_marginTop="80dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/accepted_music_name"/>
         <TextView
-                android:text="演唱者     : "
-                android:textSize="25dp"
+                android:text="@string/music_author"
+                android:textSize="25sp"
                 android:layout_marginTop="80dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -68,10 +71,11 @@
                 android:layout_height="fill_parent">
 
             <Button
-                    android:text="播放"
-                    android:textSize="20dp"
+                    android:text="@string/play"
+                    android:textSize="20sp"
                     android:layout_width="130dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
                     android:layout_marginLeft="32dp"
                     android:layout_gravity="center"
                     android:id="@+id/accepted_play_button"/>
@@ -80,8 +84,8 @@
                     android:layout_height="fill_parent"
                     android:id="@+id/textView5"/>
             <Button
-                    android:text="演奏"
-                    android:textSize="20dp"
+                    android:text="@string/perform"
+                    android:textSize="20sp"
                     android:layout_width="130dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"

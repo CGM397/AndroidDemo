@@ -19,8 +19,8 @@
                 android:layout_height="fill_parent"
                 android:id="@+id/textView4"/>
         <TextView
-                android:text="Interactive Piano"
-                android:textSize="30dp"
+                android:text="@string/title"
+                android:textSize="30sp"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent" android:id="@+id/graded_select_music"/>
     </LinearLayout>
@@ -38,17 +38,19 @@
             android:layout_width="match_parent"
             android:layout_height="fill_parent">
         <TextView
-                android:text="音乐编号 : "
-                android:textSize="25dp"
+                android:text="@string/music_id"
+                android:textSize="25sp"
                 android:layout_marginTop="80dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/graded_music_id"/>
         <TextView
-                android:text="演唱者     : "
-                android:textSize="25dp"
+                android:text="@string/music_author"
+                android:textSize="25sp"
                 android:layout_marginTop="80dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
