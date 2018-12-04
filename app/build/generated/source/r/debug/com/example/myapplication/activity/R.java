@@ -3402,10 +3402,8 @@ containing a value of this type.
     }
     public static final class raw {
         public static final int music_00001=0x7f070000;
-        public static final int music_00002=0x7f070001;
-        public static final int music_00003=0x7f070002;
-        public static final int music_00004=0x7f070003;
-        public static final int music_00005=0x7f070004;
+        public static final int music_00003=0x7f070001;
+        public static final int music_00004=0x7f070002;
     }
     public static final class string {
         public static final int abc_action_bar_home_description=0x7f080000;

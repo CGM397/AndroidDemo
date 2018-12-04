@@ -1,6 +1,22 @@
 [
     {
+        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\release\\raw\\music_00003.mid",
+        "source": "D:\\Android\\AndroidDemo\\app\\src\\main\\res\\raw\\music_00003.mid"
+    },
+    {
+        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\release\\raw\\music_00002.mp3",
+        "source": "D:\\Android\\AndroidDemo\\app\\src\\main\\res\\raw\\music_00002.mp3"
+    },
+    {
+        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\release\\raw\\music_00005.mid",
+        "source": "D:\\Android\\AndroidDemo\\app\\src\\main\\res\\raw\\music_00005.mid"
+    },
+    {
         "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\release\\raw\\music_00001.mp3",
         "source": "D:\\Android\\AndroidDemo\\app\\src\\main\\res\\raw\\music_00001.mp3"
+    },
+    {
+        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\release\\raw\\music_00004.mid",
+        "source": "D:\\Android\\AndroidDemo\\app\\src\\main\\res\\raw\\music_00004.mid"
     }
 ]

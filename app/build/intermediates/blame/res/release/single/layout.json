@@ -56,10 +56,6 @@
         "source": "D:\\Android\\AndroidDemo\\app\\src\\main\\res\\layout\\show_available_music.xml"
     },
     {
-        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\release\\layout\\analyze_music.xml",
-        "source": "D:\\Android\\AndroidDemo\\app\\src\\main\\res\\layout\\analyze_music.xml"
-    },
-    {
         "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\release\\layout\\show_available_music_detail.xml",
         "source": "D:\\Android\\AndroidDemo\\app\\src\\main\\res\\layout\\show_available_music_detail.xml"
     },
@@ -86,6 +82,10 @@
     {
         "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\release\\layout\\support_simple_spinner_dropdown_item.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a3d379dfad96760f7b64723036e6ba352bef76e\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\release\\layout\\show_graded_music_detail.xml",
+        "source": "D:\\Android\\AndroidDemo\\app\\src\\main\\res\\layout\\show_graded_music_detail.xml"
     },
     {
         "merged": "D:\\Android\\AndroidDemo\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_lines_media.xml",

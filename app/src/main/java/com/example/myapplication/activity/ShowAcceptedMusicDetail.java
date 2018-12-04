@@ -3,9 +3,13 @@ package com.example.myapplication.activity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 import com.example.myapplication.entity.AnalysisContent;
 import com.example.myapplication.entity.Music;
 import com.example.myapplication.mediaService.MusicServer;
@@ -13,9 +17,28 @@ import com.example.myapplication.service.MusicManagementService;
 import com.example.myapplication.serviceImplement.MusicManagementImpl;
 
 import java.io.File;
+import java.io.OutputStream;
+import java.io.PrintStream;
+import java.net.Socket;
 import java.util.ArrayList;
 
 public class ShowAcceptedMusicDetail extends Activity {
+
+    //服务器IP地址，可能会改变，因为IP地址是动态获得的
+    private final String HOST_IP = "192.168.43.143";
+    private final int HOST_PORT = 30001;
+
+    private Handler myHandler = new Handler(new Handler.Callback() {
+        @Override
+        public boolean handleMessage(Message message) {
+            if(message.what == 0x1){
+                Toast.makeText(ShowAcceptedMusicDetail.this,"开始建立连接！",Toast.LENGTH_SHORT).show();
+            }else if(message.what == 0x2){
+                Toast.makeText(ShowAcceptedMusicDetail.this,"开始传输数据！",Toast.LENGTH_SHORT).show();
+            }
+            return true;
+        }
+    });
 
     @Override
     protected void onCreate(final Bundle savedInstanceState){
@@ -71,7 +94,30 @@ public class ShowAcceptedMusicDetail extends Activity {
             public void onClick(View v) {
                 MIDIHandler midiHandler = new MIDIHandler();
                 String path = getFilesDir().getPath() + "/MidiAnalysisResult/" + musicId + ".txt";
-                ArrayList<AnalysisContent> storeContent = midiHandler.readMidi(path);
+                final ArrayList<AnalysisContent> storeContent = midiHandler.readMidi(path);
+
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        try{
+                            myHandler.sendEmptyMessage(0x1);
+                            Socket socket = new Socket(HOST_IP, HOST_PORT);
+                            myHandler.sendEmptyMessage(0x2);
+                            PrintStream printStream = new PrintStream(socket.getOutputStream());
+                            for(AnalysisContent content: storeContent){
+                                printStream.print(content.getTimeIntervalFromLastCommand() + ",");
+                                printStream.print(content.getState() + ",");
+                                printStream.print(content.getMusicNote() + ",");
+                                printStream.print(content.getMusicScale() + ",");
+                                printStream.println(content.getDuration());
+                            }
+                            printStream.close();
+                            socket.close();
+                        }catch (Exception e){
+                            e.printStackTrace();
+                        }
+                    }
+                }).start();
             }
         });
     }

@@ -19,10 +19,8 @@ public class MainMenu extends Activity {
 
     private static boolean isExit = false;
     private static String firstMusicPath = "/Music/00001.txt";
-    private static String secondMusicPath = "/Music/00002.txt";
-    private static String fifthMusicPath = "/Music/00005.txt";
 
-    Handler myHandler = new Handler() {
+    private Handler myHandler = new Handler() {
 
         @Override
         public void handleMessage(Message msg) {
@@ -40,7 +38,7 @@ public class MainMenu extends Activity {
         return super.onKeyDown(keyCode, event);
     }
 
-    public void exit() {
+    private void exit() {
         if (!isExit) {
             isExit = true;
             Toast.makeText(getApplicationContext(), "再按一次退出程序",
@@ -65,20 +63,12 @@ public class MainMenu extends Activity {
         if(!midiInfoFile.exists())
             midiInfoFile.mkdirs();
 
-        Music one = new Music("00001", "绿野仙踪","陈悦",
-                "Null", false, 0);
-        Music two = new Music("00002", "hello_android","unknown",
-                "Null", false, 0);
-        Music five = new Music("00005", "小星星","unknown",
+        Music one = new Music("00001", "小星星","Mozart",
                 "Null", false, 0);
         File file1 = new File(getFilesDir().getPath()+firstMusicPath);
-        File file2 = new File(getFilesDir().getPath()+secondMusicPath);
-        File file5 = new File(getFilesDir().getPath()+fifthMusicPath);
-        if(!file1.exists() && !file2.exists() && !file5.exists()){
+        if(!file1.exists()){
             MusicManagementService musicManagement = new MusicManagementImpl();
             musicManagement.writeMusic(file1, one);
-            musicManagement.writeMusic(file2, two);
-            musicManagement.writeMusic(file5, five);
         }
 
         //add buttonListeners
