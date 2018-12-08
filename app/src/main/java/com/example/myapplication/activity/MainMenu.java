@@ -19,6 +19,8 @@ public class MainMenu extends Activity {
 
     private static boolean isExit = false;
     private static String firstMusicPath = "/Music/00001.txt";
+    private static String secondMusicPath = "/Music/00002.txt";
+    private static String thirdMusicPath = "/Music/00003.txt";
 
     private Handler myHandler = new Handler() {
 
@@ -65,10 +67,19 @@ public class MainMenu extends Activity {
 
         Music one = new Music("00001", "小星星","Mozart",
                 "Null", false, 0);
+        Music two = new Music("00002", "茉莉花","何仿(整理改编)",
+                "Null", false, 0);
+        Music third = new Music("00003", "让我们荡起双桨","刘炽",
+                "Null", false, 0);
         File file1 = new File(getFilesDir().getPath()+firstMusicPath);
-        if(!file1.exists()){
+        File file2 = new File(getFilesDir().getPath()+secondMusicPath);
+        File file3 = new File(getFilesDir().getPath()+thirdMusicPath);
+
+        if(!file1.exists() && !file2.exists() && file3.exists()){
             MusicManagementService musicManagement = new MusicManagementImpl();
             musicManagement.writeMusic(file1, one);
+            musicManagement.writeMusic(file2, two);
+            musicManagement.writeMusic(file3, third);
         }
 
         //add buttonListeners

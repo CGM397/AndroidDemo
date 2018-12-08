@@ -1013,8 +1013,8 @@ int mipmap ic_launcher_round 0x7f030006
 int mipmap logo 0x7f030007
 int mipmap return_button 0x7f030008
 int raw music_00001 0x7f070000
-int raw music_00003 0x7f070001
-int raw music_00004 0x7f070002
+int raw music_00002 0x7f070001
+int raw music_00003 0x7f070002
 int string abc_action_bar_home_description 0x7f080000
 int string abc_action_bar_home_description_format 0x7f080001
 int string abc_action_bar_home_subtitle_description_format 0x7f080002

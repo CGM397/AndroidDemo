@@ -20,7 +20,7 @@ public class MusicServer extends Service{
         //if(mediaPlayer.isPlaying())
             //mediaPlayer.pause();
         mediaPlayer = MediaPlayer.create(getApplicationContext(),intent.getIntExtra("music_to_play",10086));
-        //mediaPlayer.setLooping(true);
+        mediaPlayer.setLooping(true);
         mediaPlayer.start();
         super.onStart(intent, startId);
     }

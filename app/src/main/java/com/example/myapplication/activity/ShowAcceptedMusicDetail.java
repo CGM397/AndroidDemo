@@ -25,8 +25,8 @@ import java.util.ArrayList;
 public class ShowAcceptedMusicDetail extends Activity {
 
     //服务器IP地址，可能会改变，因为IP地址是动态获得的
-    private final String HOST_IP = "192.168.43.143";
-    private final int HOST_PORT = 30001;
+    private final String HOST_IP = "192.168.4.1";
+    private final int HOST_PORT = 8080;
 
     private Handler myHandler = new Handler(new Handler.Callback() {
         @Override
@@ -56,7 +56,7 @@ public class ShowAcceptedMusicDetail extends Activity {
 
         //set music_id and music_name
         final String musicId = musicInfo.substring(0,musicInfo.indexOf("----"));
-        String musicName = musicInfo.substring(musicInfo.indexOf("----")+4);
+        final String musicName = musicInfo.substring(musicInfo.indexOf("----")+4);
         id.append(musicId);
         name.append(musicName);
 
@@ -100,6 +100,21 @@ public class ShowAcceptedMusicDetail extends Activity {
                     @Override
                     public void run() {
                         try{
+                            Socket socket = new Socket(HOST_IP, HOST_PORT);
+                            PrintStream printStream = new PrintStream(socket.getOutputStream());
+                            printStream.println(musicName);
+                            printStream.close();
+                            socket.close();
+                        }catch (Exception e){
+                            e.printStackTrace();
+                        }
+                    }
+                }).start();
+
+                /*new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        try{
                             myHandler.sendEmptyMessage(0x1);
                             Socket socket = new Socket(HOST_IP, HOST_PORT);
                             myHandler.sendEmptyMessage(0x2);
@@ -117,7 +132,7 @@ public class ShowAcceptedMusicDetail extends Activity {
                             e.printStackTrace();
                         }
                     }
-                }).start();
+                }).start();*/
             }
         });
     }
