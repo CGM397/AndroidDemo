@@ -1,127 +1,189 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:2:1-31:12
+ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:2:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:2.0.0-beta1] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\constraint-layout-2.0.0-beta1.aar\3bc976c1ecfded8f0891dcf24ff01ccf\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\0a2a7de3f7389ff81c10853bbd836f9f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\8ca610280c5777d394b2ede9e49e3bf6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\4ba6852a838cd9642b9e13586b52cd4f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\3ed53cc193b79a5eb6e89e2feb715fd1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\44b6ec14d8255d8134a208a43e26c5a2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\d7f68e43bf27ff1ac9b59d1dc16dcb70\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\4bae431f33bb80ebb334298897a42409\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\e9da097848957777d0e18ecd78164525\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\1fee44fef9632ab2dd7412601aac0b93\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\daf2d8561a7b6abba740558fc8886acf\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\f78b35d35842922da28d67362cb11738\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\8773d00bb79f93e46ef44ace8e446a93\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\9cea16f5db0cc142af2547480e52382b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\da0cba49231f9fccda9a67a827e8c74c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\d2c1604105991ca7ffc0ffc342295184\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\74cc0dac697c980687680da5dce2492d\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\226237021e73ce3700926614cff62e06\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\ff9d49f23ad47ee8c8e3119e54833e45\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\e2607e88b598494d1056e384373a0c09\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\18b3894f82f442543d6479eceac94b65\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\7a126a9bbb28bdad362f16bc66e7671b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\5f2d9463f2593c32007c0ff3430dd360\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\b09b6f3d016c1e3ac10e90c68b316570\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\141b9ff283eef674b10aaa94ef76f259\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\4e839bd458d98bd6cbfc7170d3c844d9\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\da696dbf0c11794005e2df617aaddf3d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\0500006cfdad1b2082b3cd82a692cc92\AndroidManifest.xml:17:1-22:12
+INJECTED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:2:1-31:12
 	package
-		ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:3:11-55
-		INJECTED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml
+		ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:3:11-55
+		INJECTED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml
+		INJECTED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml
-	xmlns:android
-		ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:2:11-69
+		INJECTED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml
+		ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:2:1-31:12
+		INJECTED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml
+		INJECTED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml
+		ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:2:1-31:12
+		INJECTED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:6:5-66
+ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:6:5-66
 	android:name
-		ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:6:22-64
+		ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:6:22-64
 application
-ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:8:5-29:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Administrator\.android\build-cache\2353aedaebab4f63135ec2b18310ca0f3f0f135b\output\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:design:25.3.1] C:\Users\Administrator\.android\build-cache\7ed0c18bce30b47245065e580f7d351923072bff\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Administrator\.android\build-cache\8a3d379dfad96760f7b64723036e6ba352bef76e\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\b277951bd2e81d4959398b95ebb05ecd90d93462\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\bc03eefa9ed7907a92b158139e9c13368b4aac77\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:transition:25.3.1] C:\Users\Administrator\.android\build-cache\901311019141ff29a52f0721ecf69cfdb9d5f19d\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Administrator\.android\build-cache\4b69d10639daf34711126c3db81b84056852dfce\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Administrator\.android\build-cache\f8bfbd3796aff6e7cd25ac3db84115592a5f4fba\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Administrator\.android\build-cache\a7fbf3f9e565e143156bbffa2233fdbc236dc12a\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Administrator\.android\build-cache\de561e6a65d23fe3dc324c6df2d01709de133189\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Administrator\.android\build-cache\2038d5cc92eda3eee6426087cd85fda037153814\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Administrator\.android\build-cache\ba263ffa3c7fd616c2214bf5128791687b14deb8\output\AndroidManifest.xml:29:5-20
-	android:label
-		ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:11:13-45
+ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:8:5-29:19
+MERGED from [com.android.support.constraint:constraint-layout:2.0.0-beta1] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\constraint-layout-2.0.0-beta1.aar\3bc976c1ecfded8f0891dcf24ff01ccf\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:2.0.0-beta1] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\constraint-layout-2.0.0-beta1.aar\3bc976c1ecfded8f0891dcf24ff01ccf\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\74cc0dac697c980687680da5dce2492d\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\74cc0dac697c980687680da5dce2492d\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\226237021e73ce3700926614cff62e06\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\226237021e73ce3700926614cff62e06\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\74cc0dac697c980687680da5dce2492d\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:13:13-39
+		ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:13:13-39
+	android:label
+		ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:11:13-45
 	android:roundIcon
-		ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:12:13-58
-	android:allowBackup
-		ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:9:13-39
+		ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:12:13-58
 	android:icon
-		ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:10:13-40
+		ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:10:13-40
+	android:allowBackup
+		ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:9:13-39
 	android:theme
-		ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:14:13-44
+		ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:14:13-44
 activity#com.example.myapplication.activity.ShowAvailableMusic
-ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:15:9-55
+ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:15:9-55
 	android:name
-		ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:15:19-53
+		ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:15:19-53
 activity#com.example.myapplication.activity.ShowAvailableMusicDetail
-ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:16:9-61
+ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:16:9-61
 	android:name
-		ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:16:19-59
+		ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:16:19-59
 activity#com.example.myapplication.activity.ShowAcceptedMusic
-ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:17:9-54
+ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:17:9-54
 	android:name
-		ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:17:19-52
+		ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:17:19-52
 activity#com.example.myapplication.activity.ShowAcceptedMusicDetail
-ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:18:9-60
+ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:18:9-60
 	android:name
-		ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:18:19-58
+		ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:18:19-58
 activity#com.example.myapplication.activity.ShowGradedMusic
-ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:19:9-52
+ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:19:9-52
 	android:name
-		ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:19:19-50
+		ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:19:19-50
 activity#com.example.myapplication.activity.ShowGradedMusicDetail
-ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:20:9-58
+ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:20:9-58
 	android:name
-		ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:20:19-56
+		ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:20:19-56
 service#com.example.myapplication.mediaService.MusicServer
-ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:21:9-85
+ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:21:9-85
 	android:name
-		ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:21:18-83
+		ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:21:18-83
 activity#com.example.myapplication.activity.MainMenu
-ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:22:9-28:20
+ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:22:9-28:20
 	android:name
-		ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:22:19-43
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:23:13-27:29
+		ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:22:19-43
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:23:13-27:29
 action#android.intent.action.MAIN
-ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:24:17-68
+ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:24:17-68
 	android:name
-		ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:24:25-66
+		ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:24:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:26:17-76
+ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:26:17-76
 	android:name
-		ADDED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml:26:27-74
+		ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml:26:27-74
 uses-sdk
-INJECTED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Administrator\.android\build-cache\2353aedaebab4f63135ec2b18310ca0f3f0f135b\output\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:design:25.3.1] C:\Users\Administrator\.android\build-cache\7ed0c18bce30b47245065e580f7d351923072bff\output\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Administrator\.android\build-cache\8a3d379dfad96760f7b64723036e6ba352bef76e\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\b277951bd2e81d4959398b95ebb05ecd90d93462\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\bc03eefa9ed7907a92b158139e9c13368b4aac77\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Administrator\.android\build-cache\356b1e30de2266f136ac246da21a33af5bd81a3d\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:transition:25.3.1] C:\Users\Administrator\.android\build-cache\901311019141ff29a52f0721ecf69cfdb9d5f19d\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Administrator\.android\build-cache\4b69d10639daf34711126c3db81b84056852dfce\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Administrator\.android\build-cache\f8bfbd3796aff6e7cd25ac3db84115592a5f4fba\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Administrator\.android\build-cache\a7fbf3f9e565e143156bbffa2233fdbc236dc12a\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Administrator\.android\build-cache\de561e6a65d23fe3dc324c6df2d01709de133189\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Administrator\.android\build-cache\2038d5cc92eda3eee6426087cd85fda037153814\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Administrator\.android\build-cache\ba263ffa3c7fd616c2214bf5128791687b14deb8\output\AndroidManifest.xml:21:5-23:58
-	tools:overrideLibrary
-		ADDED from [com.android.support:design:25.3.1] C:\Users\Administrator\.android\build-cache\7ed0c18bce30b47245065e580f7d351923072bff\output\AndroidManifest.xml:23:9-59
+INJECTED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml
+INJECTED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support.constraint:constraint-layout:2.0.0-beta1] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\constraint-layout-2.0.0-beta1.aar\3bc976c1ecfded8f0891dcf24ff01ccf\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:2.0.0-beta1] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\constraint-layout-2.0.0-beta1.aar\3bc976c1ecfded8f0891dcf24ff01ccf\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\0a2a7de3f7389ff81c10853bbd836f9f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\0a2a7de3f7389ff81c10853bbd836f9f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\8ca610280c5777d394b2ede9e49e3bf6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\8ca610280c5777d394b2ede9e49e3bf6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\4ba6852a838cd9642b9e13586b52cd4f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\4ba6852a838cd9642b9e13586b52cd4f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\3ed53cc193b79a5eb6e89e2feb715fd1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\3ed53cc193b79a5eb6e89e2feb715fd1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\44b6ec14d8255d8134a208a43e26c5a2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\44b6ec14d8255d8134a208a43e26c5a2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\d7f68e43bf27ff1ac9b59d1dc16dcb70\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\d7f68e43bf27ff1ac9b59d1dc16dcb70\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\4bae431f33bb80ebb334298897a42409\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\4bae431f33bb80ebb334298897a42409\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\e9da097848957777d0e18ecd78164525\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\e9da097848957777d0e18ecd78164525\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\1fee44fef9632ab2dd7412601aac0b93\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\1fee44fef9632ab2dd7412601aac0b93\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\daf2d8561a7b6abba740558fc8886acf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\daf2d8561a7b6abba740558fc8886acf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\f78b35d35842922da28d67362cb11738\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\f78b35d35842922da28d67362cb11738\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\8773d00bb79f93e46ef44ace8e446a93\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\8773d00bb79f93e46ef44ace8e446a93\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\9cea16f5db0cc142af2547480e52382b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\9cea16f5db0cc142af2547480e52382b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\da0cba49231f9fccda9a67a827e8c74c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\da0cba49231f9fccda9a67a827e8c74c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\d2c1604105991ca7ffc0ffc342295184\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\d2c1604105991ca7ffc0ffc342295184\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\74cc0dac697c980687680da5dce2492d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\74cc0dac697c980687680da5dce2492d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\226237021e73ce3700926614cff62e06\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\226237021e73ce3700926614cff62e06\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\ff9d49f23ad47ee8c8e3119e54833e45\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\ff9d49f23ad47ee8c8e3119e54833e45\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\e2607e88b598494d1056e384373a0c09\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\e2607e88b598494d1056e384373a0c09\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\18b3894f82f442543d6479eceac94b65\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\18b3894f82f442543d6479eceac94b65\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\7a126a9bbb28bdad362f16bc66e7671b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\7a126a9bbb28bdad362f16bc66e7671b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\5f2d9463f2593c32007c0ff3430dd360\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\5f2d9463f2593c32007c0ff3430dd360\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\b09b6f3d016c1e3ac10e90c68b316570\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\b09b6f3d016c1e3ac10e90c68b316570\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\141b9ff283eef674b10aaa94ef76f259\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\141b9ff283eef674b10aaa94ef76f259\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\4e839bd458d98bd6cbfc7170d3c844d9\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\4e839bd458d98bd6cbfc7170d3c844d9\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\da696dbf0c11794005e2df617aaddf3d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\da696dbf0c11794005e2df617aaddf3d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\0500006cfdad1b2082b3cd82a692cc92\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\0500006cfdad1b2082b3cd82a692cc92\AndroidManifest.xml:20:5-44
+INJECTED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml
+INJECTED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml
+		INJECTED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml
+		ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml
+		INJECTED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Android\AndroidDemo\app\src\main\AndroidManifest.xml
-meta-data#android.support.VERSION
-ADDED from [com.android.support:design:25.3.1] C:\Users\Administrator\.android\build-cache\7ed0c18bce30b47245065e580f7d351923072bff\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Administrator\.android\build-cache\8a3d379dfad96760f7b64723036e6ba352bef76e\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\b277951bd2e81d4959398b95ebb05ecd90d93462\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\bc03eefa9ed7907a92b158139e9c13368b4aac77\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Administrator\.android\build-cache\356b1e30de2266f136ac246da21a33af5bd81a3d\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:transition:25.3.1] C:\Users\Administrator\.android\build-cache\901311019141ff29a52f0721ecf69cfdb9d5f19d\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Administrator\.android\build-cache\4b69d10639daf34711126c3db81b84056852dfce\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Administrator\.android\build-cache\f8bfbd3796aff6e7cd25ac3db84115592a5f4fba\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Administrator\.android\build-cache\a7fbf3f9e565e143156bbffa2233fdbc236dc12a\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Administrator\.android\build-cache\de561e6a65d23fe3dc324c6df2d01709de133189\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Administrator\.android\build-cache\2038d5cc92eda3eee6426087cd85fda037153814\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Administrator\.android\build-cache\ba263ffa3c7fd616c2214bf5128791687b14deb8\output\AndroidManifest.xml:25:5-27:34
-	android:value
-		ADDED from [com.android.support:design:25.3.1] C:\Users\Administrator\.android\build-cache\7ed0c18bce30b47245065e580f7d351923072bff\output\AndroidManifest.xml:27:9-31
-	android:name
-		ADDED from [com.android.support:design:25.3.1] C:\Users\Administrator\.android\build-cache\7ed0c18bce30b47245065e580f7d351923072bff\output\AndroidManifest.xml:26:9-47
+		INJECTED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml
+		ADDED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml
+		INJECTED from D:\MyProject\AndroidDemo\app\src\main\AndroidManifest.xml
